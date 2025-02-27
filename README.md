@@ -9,6 +9,6 @@ Client run commands:
   npm start
 
   Tech stack:
-  
-  Back end - nodejs express postgres
-  Front end - react, html, css
+
+  Back end - nodejs express postgres 
+  Front end - react + vite, html, css, bootstrap

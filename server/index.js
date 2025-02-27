@@ -34,7 +34,7 @@ app.get('/todo', async (req, res) => {
         const allToDos = await pool.query(
             "SELECT * FROM todo ORDER BY todo_id ASC;"
         )        
-
+        console.log("requested all todos")
         res.json(allToDos.rows)
     } catch (error) {
         console.error(error.message)
@@ -78,6 +78,7 @@ app.delete('/todo/:id', async (req, res) => {
             "DELETE FROM todo WHERE todo_id = $1;",
             [id]
         )
+        console.log("requested deleted")
         res.status(200).json( {success: true, message: "Task has been deleted!"} )
     } catch (error) {
         console.error(message.error)
