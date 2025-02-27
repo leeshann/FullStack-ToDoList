@@ -10,6 +10,8 @@ This was my first full-stack application implementing both a back end server, da
 2. Client-side communication via fetch
 3. State management 
 
+# Run commands 
+
 ### Start server: 
   cd server <br>
   npm start
@@ -20,7 +22,7 @@ This was my first full-stack application implementing both a back end server, da
   npm install <br>
   npm run dev
 
-### Stack:
+# Stack:
 
   Back end - nodejs, express, postgres <br>
   Front end - react + vite, html, css + bootstrap
